@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar - Cybersecurity & Systems Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a192f;
+            --text-color: #8892b0;
+            --primary-color: #112240;
+            --secondary-color: #233554;
+            --accent-color: #64ffda;
+            --highlight-color: #ffd700;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        nav {
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+            width: 220px;
+            overflow-y: auto;
+        }
+        
+        nav ul { list-style-type: none; }
+        
+        nav ul li { margin-bottom: 0.8rem; }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover { color: var(--accent-color); }
+        
+        main {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        
+        .card {
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1, h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        h3 { color: var(--highlight-color); }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .skill:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            nav {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 25px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        a { 
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--highlight-color);
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+            font-weight: 600;
+        }
+
+        .certification-item {
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .certification-details {
+            display: none;
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="C:\laragon\www\website\photo_1.jpg" alt="Abhishek Kumar" class="profile-image">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about" class="card">
+                <h1>Abhishek Kumar</h1>
+                <p>Innovative Cybersecurity Professional | System Administrator | Network Specialist</p>
+                <p>Driven and results-oriented professional with a proven track record in cybersecurity, network administration, and system management. Passionate about implementing robust security measures and optimizing IT infrastructure for maximum efficiency and protection.</p>
+            </section>
+            
+            <section id="skills" class="card">
+                <h2>Core Competencies</h2>
+                <div class="skills">
+                    <span class="skill">Network Security</span>
+                    <span class="skill">Identity and Access Management (IAM)</span>
+                    <span class="skill">System Administration</span>
+                    <span class="skill">Data Protection & Backups</span>
+                    <span class="skill">Docker & Containerization</span>
+                    <span class="skill">NAS Configuration</span>
+                    <span class="skill">Next-Gen Firewall Management</span>
+                    <span class="skill">Windows Server Administration</span>
+                    <span class="skill">Linux System </span>
+					<span class="skill">Troubleshooting </span> 
+					</div>
+            </section>
+            
+            <section id="experience" class="card">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>IT Administrator | HQL Solutions</h3>
+                        <p>August 2024 – Present</p>
+                        <ul>
+                            <li>Spearheaded the implementation of a comprehensive <span class="highlight">cybersecurity framework</span>, resulting in a 40% reduction in security incidents.</li>
+                            <li>Optimized network infrastructure, improving overall system performance by <span class="highlight">25%</span> and reducing downtime by <span class="highlight">60%</span>.</li>
+                            <li>Designed and implemented a robust <span class="highlight">Identity and Access Management (IAM) system</span>, enhancing data protection and compliance with industry regulations.</li>
+                            <li>Led a team of 5 IT professionals, fostering a culture of continuous learning and innovation.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3>System Administration | Intern | Oasis Software Solutions</h3>
+                        <p>April 2024 – July 2024</p>
+                        <ul>
+                            <li>Conducted <span class="highlight">vulnerability assessments</span> on critical systems, identifying and mitigating risk vulnerabilities.</li>
+                            <li>Assisted in the deployment of a <span class="highlight">security model</span>, enhancing the company's overall security posture.</li>
+                            <li>Contributed to the creation of security awareness training materials, educating 50 employees on best practices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="card">
+                <h2>Key Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Enterprise-grade CI/CD Pipeline</h3>
+                        <p>Platform: AWS</p>
+                        <p>Architected and implemented a secure, scalable CI/CD pipeline using Jenkins, Maven, SonarQube, Argo CD, and Kubernetes, resulting in <span class="highlight">50% faster deployment times</span> and improved code quality.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>IoT-based EV Battery Monitoring System</h3>
+                        <p>Platform: AWS IoT Core</p>
+                        <p>Developed a cutting-edge system for real-time monitoring of EV battery parameters, leveraging IoT sensors and cloud computing. Implemented <span class="highlight">end-to-end encryption</span> and <span class="highlight">anomaly detection algorithms</span>.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Adaptive Speed Control System for Industrial Motors</h3>
+                        <p>Platform: MATLAB</p>
+                        <p>Designed and simulated an advanced speed control system for DC motors, integrating <span class="highlight">machine learning algorithms</span> for predictive maintenance and energy optimization.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="education" class="card">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>PG Diploma in Advanced IT Infrastructure, Systems and Security</h3>
+                        <p>CDAC Sunbeam, Pune, Maharashtra | February 2024</p>
+                        <p>Specialized in <span class="highlight">advanced cybersecurity techniques</span>, cloud architecture.</p>
+                        <p>Capstone Project: "Implementation of a Zero Trust Architecture in a Hybrid Cloud Environment"</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>B.Tech in Electrical Engineering</h3>
+                        <p>Bharati Vidyapeeth (Deemed to be University) College of Engineering, Pune, Maharashtra | June 2023</p>
+                        <p>CGPA: <span class="highlight">7.74</span></p>
+                        <p>Relevant Coursework: Computer Networks, Data Structures, Cybersecurity Fundamentals, Control Systems</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="card">
+                <h2>Professional Certifications</h2>
+                <div class="certification-grid">
+                    <div class="certification-item" onclick="toggleDetails(this)">
+                        <h4>Cybersecurity Foundations: Cybersecurity Fundamentals</h4>
+                        <div class="certification-details">
+                            <p>Issuer: Canvas Credentials (Badgr)</p>
+                            <p>Issued: August 2024</p>
+                            <p>Credential ID: 66d088c7f3a8cf6c896b0c64</p>
+                        </div>
+                    </div>
+                    <div class="certification-item" onclick="toggleDetails(this)">
+                        <h4>Cybersecurity Foundations: IT Fundamentals</h4>
+                        <div class="certification-details">
+                            <p>Issuer: Canvas Credentials (Badgr)</p>
+                            <p>Issued: August 2024</p>
+                            <p>Credential ID: 66d083c5a3964e5fe94bd04d</p>
+                        </div>
+                    </div>
+                    <div class="certification-item" onclick="toggleDetails(this)">
+                        <h4>IT Fundamental</h4>
+                        <div class="certification-details">
+                            <p>Issuer: Level Effect</p>
+                            <p>Issued: August 2024</p>
+                        </div>
+                    </div>
+                    <div class="certification-item" onclick="toggleDetails(this)">
+                        <h4>Mastercard - Cybersecurity Job Simulation</h4>
+                        <div class="certification-details">
+                            <p>Issuer: Forage</p>
+                            <p>Issued: August 2024</p>
+                            <p>Credential ID: 7NGD2qDoZ7PWzE4Ln</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="card">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:abhishekram2020@gmail.com">abhishekram2020@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/abhi4kumar/" target="_blank">linkedin.com/in/abhi4kumar</a></p>
+                <p>GitHub: <a href="https://github.com/abhishek-kumar" target="_blank">github.com/abhishek-kumar</a></p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.certification-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
